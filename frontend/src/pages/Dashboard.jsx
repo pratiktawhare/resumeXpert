@@ -9,10 +9,8 @@ import axios from 'axios'
 import toast from 'react-hot-toast'
 import { ResumeSummaryCard } from '../components/Cards'
 import moment from 'moment' 
-import Model from '../components/Model'
-import CreateResumeForm from '../components/CreateResumeForm'
 
-const Dashboard = () => {
+  const Dashboard = () => {
 
   const navigate = useNavigate();
   const [openCreateModel, setOpenCreateModel] = useState(false)
