@@ -40,7 +40,7 @@ const SignUp = ({setCurrentPage}) => {
       });
       const {token} = response.data;
       if(token) {
-        localStorage,setItem('token', token);
+        localStorage.setItem('token', token);
         updateUser(response.data);
         navigate('/dashboard');
       }
@@ -73,7 +73,7 @@ const SignUp = ({setCurrentPage}) => {
           placeholder='Min 8 characters'
           type='password' />
 
-        {error && <div className={styles.errorMessage}></div>}
+        {error && <div className={styles.errorMessage}>{error}</div>}
         <button type='submit' className={styles.signupSubmit}>
           Create Account
         </button>
