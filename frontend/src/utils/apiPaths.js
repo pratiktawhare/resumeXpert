@@ -1,4 +1,4 @@
-export const BASE_URL = 'https://resumexpert-z3eb.onrender.com'
+export const BASE_URL = 'https://resumexpert-backend.vercel.app/'
 
 // Routes used for frontend
 export const API_PATHS = {
